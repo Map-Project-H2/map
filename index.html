@@ -52,7 +52,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[31.266681022146315,-127.43039120054922],[42.41865750214012,-109.25266953815932]]);
+        }).fitBounds([[33.366982450886134,-129.31116631596177],[42.44967973399152,-114.50636974449998]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -192,16 +192,6 @@
         bounds_group.addLayer(layer_H2Projects_1);
         map.addLayer(layer_H2Projects_1);
         setBounds();
-        resetLabels([layer_H2Projects_1]);
-        map.on("zoomend", function(){
-            resetLabels([layer_H2Projects_1]);
-        });
-        map.on("layeradd", function(){
-            resetLabels([layer_H2Projects_1]);
-        });
-        map.on("layerremove", function(){
-            resetLabels([layer_H2Projects_1]);
-        });
         </script>
 
 <div id="map-footer">
